@@ -982,6 +982,32 @@
 			}]
 		},
 		{
+			"type": 3,
+			"title": "Etherpad",
+			"description": "Etherpad",
+			"categories": ["Editor"],
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/s-awaji/portainer/custompemplates",
+				"stackfile": "etherpad/docker-compose.yml"
+			},
+			"env": [{
+				"name": "ETERPAD_ADMIN_PASS",
+				"label": "Etherpad admin password",
+				"description": "Password used by the Etherpad admin user."
+			},
+			{
+				"name": "ETERPAD_DB_PASS",
+				"label": "Database password",
+				"description": "Password used by the Database user."
+			},
+			{
+				"name": "MYSQL_ROOT_PASS",
+				"label": "MySQL root password",
+				"description": "Password used by the MySQL root user." 
+			}]
+		},
+		{
 			"type": 2,
 			"title": "Microsoft OMS Agent",
 			"description": "Microsoft Operations Management Suite Linux agent.",
