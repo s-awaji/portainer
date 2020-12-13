@@ -988,7 +988,7 @@
 			"categories": ["Editor"],
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/s-awaji/portainer/custompemplates",
+				"url": "https://github.com/s-awaji/portainer/customtemplates",
 				"stackfile": "etherpad/docker-compose.yml"
 			},
 			"env": [{
