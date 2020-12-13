@@ -3,12 +3,12 @@ services:
   etherpad:
     image: etherpad/etherpad:latest
     environment:
-      ADMIN_PASSWORD: password
+      ADMIN_PASSWORD: pleaseset1
       DB_TYPE: mysql
       DB_HOST: epdb
       DB_PORT: 3306
       DB_NAME: etherpad
-      DB_PASS: etherpad
+      DB_PASS: pleaseset2
       DB_USER: etherpad
     volumes:
      - ep-data:/opt/etherpad-lite
@@ -18,9 +18,9 @@ services:
   epdb:
     image: mariadb
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: pleaseset3
       MYSQL_DATABASE: etherpad
-      MYSQL_PASSWORD: etherpad
+      MYSQL_PASSWORD: pleaseset2
       MYSQL_USER: etherpad
     volumes:
       - ep-db:/var/lib/mysql
