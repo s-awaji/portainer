@@ -409,7 +409,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
-			"image": "iron/functions-ui:latest",
+			"image": "iron/functions-ui:0.0.2",
 			"ports": [
 				"4000/tcp"
 			],
