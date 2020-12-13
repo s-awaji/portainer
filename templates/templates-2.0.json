@@ -992,12 +992,12 @@
 				"stackfile": "customtemplates/etherpad/docker-compose.yml"
 			},
 			"env": [{
-				"name": "ETERPAD_ADMIN_PASS",
+				"name": "ETHERPAD_ADMIN_PASS",
 				"label": "Etherpad admin password",
 				"description": "Password used by the Etherpad admin user."
 			},
 			{
-				"name": "ETERPAD_DB_PASS",
+				"name": "ETHERPAD_DB_PASS",
 				"label": "Database password",
 				"description": "Password used by the Database user."
 			},
