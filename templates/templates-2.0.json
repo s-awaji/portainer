@@ -988,8 +988,8 @@
 			"categories": ["Editor"],
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/s-awaji/portainer/customtemplates",
-				"stackfile": "etherpad/docker-compose.yml"
+				"url": "https://github.com/s-awaji/portainer",
+				"stackfile": "customtemplates/etherpad/docker-compose.yml"
 			},
 			"env": [{
 				"name": "ETERPAD_ADMIN_PASS",
