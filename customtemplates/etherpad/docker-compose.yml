@@ -10,6 +10,8 @@ services:
       DB_NAME: etherpad
       DB_PASS: ${ETHERPAD_DB_PASS}
       DB_USER: etherpad
+    depends_on :
+      - epdb
     volumes:
      - ep-data:/opt/etherpad-lite
     ports:
