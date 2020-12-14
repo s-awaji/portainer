@@ -21,3 +21,6 @@ services:
     volumes:
       - upload-data:/home/hackmd/app/public/uploads
     restart: always
+volumes:
+  database-data:
+  upload-data:
