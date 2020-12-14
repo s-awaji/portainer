@@ -2,8 +2,8 @@ version: '2'
 services:  
   etherpad:
     image: etherpad/etherpad:latest
-    hostname: etherpad
-    container_name: etherpad
+#    hostname: etherpad
+#    container_name: etherpad
     environment:
       ADMIN_PASSWORD: ${ETHERPAD_ADMIN_PASS}
       DB_TYPE: mysql
@@ -19,13 +19,13 @@ services:
     ports:
       - 9001:9001
     restart: always
-    networks:
-      - web
+#    networks:
+#      - web
 
   epdb:
     image: mariadb
-    hostname: epdb
-    container_name: epdb
+#    hostname: epdb
+#    container_name: epdb
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASS}
       MYSQL_DATABASE: etherpad
@@ -34,12 +34,12 @@ services:
     volumes:
       - ep-db:/var/lib/mysql
     restart: always
-    networks:
-      - web
+#    networks:
+#      - web
 
 volumes:
   ep-data:
   ep-db:
-networks:
-  web:
-    external: true
+#networks:
+#  web:
+#    external: true
