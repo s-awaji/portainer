@@ -25,3 +25,6 @@ services:
     volumes:
       - ep-db:/var/lib/mysql
 
+volumes:
+  ep-data:
+  ep-db:
