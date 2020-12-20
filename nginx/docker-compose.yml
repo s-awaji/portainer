@@ -9,9 +9,12 @@ services:
       - proxy
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - "/var/run/docker.sock:/tmp/docker.sock:ro"
       - "./vhost.d:/etc/nginx/vhost.d:ro"
+      - "./certs:/etc/nginx/certs"
+      - "./htpasswd:/etc/nginx/htpasswd:ro"
 
   portainer:
     image: portainer/portainer-ce:2.0.0
@@ -22,6 +25,7 @@ services:
     environment:
       - VIRTUAL_HOST=portainer.yourdomain.com
       - VIRTUAL_PORT=9000
+      - CERT_NAME=default
     ports:
       - 8000:8000
     volumes:
@@ -30,6 +34,8 @@ services:
 
 networks:
   proxy:
+    external: true
 
 volumes:
   portainer_data:
+    extrnal: true
